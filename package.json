@@ -2,12 +2,12 @@
   "name": "koa-typescript",
   "version": "1.0.0",
   "description": "API Server",
-  "main": "dist/server.js",
+  "main": "dist/app.js",
   "scripts": {
-    "watch": "env-cmd -f .env nodemon --ignore tests/ --watch src -e ts,tsx --exec ts-node src/server.ts",
+    "watch": "env-cmd -f .env nodemon --ignore tests/ --watch src -e ts,tsx --exec ts-node src/app.ts",
     "build": "tsc",
     "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
-    "serve": "env-cmd -f .env node dist/server.js"
+    "serve": "env-cmd -f .env node dist/app.js"
   },
   "keywords": [
     "typescript",
